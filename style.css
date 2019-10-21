@@ -1,0 +1,215 @@
+.aBlock {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    padding-right: 0;
+    padding-left: 4px;
+    display: block;
+    border: 1px solid yellow;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+.bBlock {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    padding-right: 0;
+    padding-left: 4px;
+    display: block;
+    border: 1px solid yellow;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+.aBlock:hover {
+    background-color: rgba(149, 192, 255, 0.829);
+    cursor: pointer;
+    animation: none;
+    animation: colorCycleOrange 450ms infinite;
+}
+.bBlock:hover {
+    background-color: rgba(149, 192, 255, 0.829);
+    cursor: pointer;
+    animation: none;
+    animation: colorCycleBlue 450ms infinite;
+}
+#mute-button{
+    font-size: 20px;
+    border: 1px solid yellow;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mute-button:hover{
+    box-shadow: 1px 1px 2px rgb(82, 82, 82);
+    border: 4px solid yellow;
+    cursor: pointer;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+}
+#field{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 50px;
+}
+.board_row{
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 2px 2px black;
+}
+.board_row_anim_blue{
+    animation: colorCycleBlue 2s infinite;
+}
+.board_row_anim_orange{
+    animation: colorCycleOrange 2s infinite;
+}
+#winner_text{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 0;
+    display: none;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.781);
+    color: white;
+    transition-duration: 100ms;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+
+#replay{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    transition-duration: 200ms;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    border-radius: 15px;
+    border: 1px solid white;
+    font-size: 10px;
+}
+#replay:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-radius: 0;
+    box-shadow: 2px 2px 2px darkgray;
+}
+img{
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    height: auto;
+    z-index: -1;
+    filter: blur(7px);
+    top: 0;
+    left: 0;
+}
+.text-container{
+    background-color: rgba(255, 255, 255, 0.295);
+    align-self: center;
+    padding: 10px;
+    margin: 10px;
+    padding-top: 0;
+    width: 300px;
+    font-size: 10px;
+    border: 1px solid yellow;
+}
+.text-container-inner{
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-bottom: -10px;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    bottom: 0;
+    padding: 25px;
+    margin-top: 50px;
+    border-left: 30px solid yellow;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: 'Overpass', sans-serif;
+}
+header{
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(144, 238, 144, 0));
+    color: black;
+    padding: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 25px;
+    border-left: 30px solid yellow;
+    text-align: left;
+
+}
+#input-prompt{
+    padding: 10px;
+    margin: 10px;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.295);
+    width: 200px;
+    align-self: center;
+    border: 1px solid yellow;
+}
+#input-prompt div{
+    margin: 1px;
+}
+#start{
+    padding: 5px;
+    margin: 15px;
+    background-color: yellow;
+    color: black;
+}
+#start:hover{
+    background-color: yellow;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px inset black;
+}
+#input-field{
+    border: 1px solid yellow;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    color: yellow;
+    padding: 5px;
+    margin: 5px;
+    width: 50px;
+    text-align: center;
+}
+#prompt-text{
+    font-size: 0.4rem;
+    padding: 5px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+@keyframes colorCycleOrange
+{
+    0%   {background: rgba(0, 0, 0, 0.445);}
+    50%  {background: rgba(196, 127, 0, 0.767);}
+    100% {background: rgba(0, 0, 0, 0.445);}
+}
+@keyframes colorCycleBlue
+{
+    0%   {background: rgba(0, 0, 0, 0.445);}
+    50%  {background: rgba(91, 91, 255, 0.767);}
+    100% {background: rgba(0, 0, 0, 0.445);}
+}

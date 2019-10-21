@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:800i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>GAMING WEBSITE</header>
+    <div class="hej"></div>
+    <div class="text-container">
+        <h1>FEM I RAD</h1>
+        <div class="text-container-inner">
+            <p id="turn_amounts">VÄLKOMMEN</p>
+            <div id="mute-button">🔊</div>
+            <p id="players_turn">⭕ BÖRJAR</p>
+        </div>
+        <p id="field_size"></p>
+    </div>
+    <div id="input-prompt">
+        <input placeholder="Size" type="number" id="input-field" required>
+        <div id="prompt-text">(press go for 25x25)</div>
+        <div id="start">GO</div>
+    </div>
+
+    <h1 id="winner_text"></h1>
+    <main id="field"></main>
+
+    <div id="replay">REPLAY</div>
+    <audio id="audio_blue" src="pinpull.wav"></audio>
+    <audio id="audio_orange" src="pinpull_start.wav"></audio>
+    <audio id="audio_win" src="winmusic.mp3"></audio>
+
+    <footer>
+        <p>SKAPAT AV SAMUEL MÅRTENSSON</p>
+    </footer>
+
+    <script type="application/javascript" src="app.js"></script>
+</body>
+
+</html>
